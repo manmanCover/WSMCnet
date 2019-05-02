@@ -107,13 +107,7 @@ Extraction code：bwye
 
 Extraction code：wooc 
 
-## Results
-
-### Evaluation of PSMNet with different settings
-
-※Note that the reported 3-px validation errors were calculated using our code.
-
-### Results on [KITTI 2015 leaderboard](http://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=stereo)
+## Results on [KITTI 2015 leaderboard](http://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=stereo)
 
 | Method | D1-all (All) | D1-all (Noc)| Runtime (s) |
 |---|---|---|---|
