@@ -24,9 +24,9 @@ echo
 
 
 ## k2015(ID=k15)/k2012(ID=k12)
-dataname="${ID}-val"
+dataname="${ID}-te"
 datapath="/media/qjc/D/data/kitti"
-mode="Val"
+mode="Submission"
 dataname_train="T(sf)_F(k15_k12)_F(${ID})"
 nckp=10
 loadmodel="./results/Train_${arch}_C${C}S${S}_${dataname_train}/checkpoint_${nckp}.pkl"
@@ -40,9 +40,9 @@ LOG="$log_dir/log_${flag}_`date +%Y-%m-%d_%H-%M-%S`.txt"
 dir_save="./results/${flag}"
 echo
 
-python val.py --arch $arch --maxdisp $maxdisp --C $C --S $S \
+python submission.py --arch $arch --maxdisp $maxdisp --C $C --S $S \
                    --loadmodel $loadmodel \
-                   --dataname $dataname --datapath $datapath --bn $bn \
+                   --dataname $dataname --datapath $datapath \
                    --freq_print $freq_print \
                    --dir_save $dir_save \
                    2>&1 | tee -a "${LOG}"
