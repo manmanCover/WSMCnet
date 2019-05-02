@@ -63,7 +63,7 @@ python train_val.py --arch $arch --maxdisp 192 --C $C --S $S \
                --dir_save (path for saving model) \
                2>&1 | tee -a "$LOG"
 ```
-You can also see those examples in [demos/*.sh].
+You can also see those examples in [demos/*.sh] for details.
 
 ### Evaluation
 Use the following command to evaluate the trained WSMCnet on KITTI 2015 test data
@@ -81,7 +81,7 @@ python submission.py --arch $arch --maxdisp 192 --C $C --S $S \
                --dir_save (path for saving result) \
 ```
 
-You can also see those examples in [demos/kitti_submission.sh](demos/kitti_submission.sh).
+You can also see the example in [demos/kitti_submission.sh](demos/kitti_submission.sh) for details.
 
 ### Pretrained Model
 
