@@ -96,7 +96,7 @@ Extraction code：bwye
 
 
 
-(2) Pretrained Model released from [PSMnet](https://)
+(2) Pretrained Model released from [PSMnet](https://github.com/JiaRenChang/PSMNet)
 
 ※NOTE: The pretrained model were saved in .tar; however, you don't need to untar it. Use torch.load() to load it.
 
